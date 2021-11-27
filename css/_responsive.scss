@@ -1,0 +1,434 @@
+@media (max-width:768px) {
+    .section-1{
+        padding: 110px;
+        position: relative;
+        background-size:750px;
+        .custom{
+            position: absolute;
+            top: 20%;
+            h2{
+                font-size: 20px;
+            }
+        }
+        .circles{
+            display: none;
+        }
+        .vehicle{
+            background-color: rgb(249, 247, 247);
+            padding: 10px;
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            display: flex;
+            text-align: center;
+            h5{
+                width: 40%;
+                font-size: 16px;
+                margin: auto;
+                color: black;
+                padding: 15px 0px;
+            }
+            .mainul1{
+                padding: 0px;
+                .main-li{    
+                    width: unset;    
+                    border: 1px solid rgb(211, 211, 211);         
+                  .my-a{
+                      width: 54px;
+                    overflow: hidden;
+                    white-space: nowrap; 
+                    margin-right: 8px;
+                    a{
+                       width: 4px;
+                       margin-right: 3px;                    
+                    }
+                }
+            }
+            .drop-ul{
+                text-align: left;
+                top: 43px;
+                width: 104px;
+                padding: 5px;
+            }
+        }
+    }    
+}
+
+    .section-2{
+        width: 93%;
+        margin: auto;
+        padding-top: 150px;
+.brands{
+    width: 100%;
+    h5{
+        font-size: 25px;
+    }
+    a{
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+        .lefticon1 , .righticon1{
+        display: none;
+        }
+.myimages{
+        img{
+     margin-right: 10px;
+       }
+     }
+   }
+
+   .section-3{
+       width: 100%;
+       .boxes-1{   
+           flex-wrap: nowrap;
+            overflow:scroll;              
+.box-1{
+    margin: 0px 8px;
+    width: 53%;
+    flex-shrink: 0;
+
+    &:hover{
+        .img-1{
+            transform: scale(1);
+        }
+    }   
+    .text-1{
+        a{
+            font-size: 18px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+}
+       }
+ .popular{
+     width: 100%;
+           a{
+               padding-top: 10px;
+               float: none;
+           }
+       }
+   }
+.section-4{
+    width: 93%;
+    margin: auto;
+    .general{
+        border-bottom: none;
+    }
+    .icons1{
+        display: none;
+    }
+    .general-2{
+        display: none;
+    }
+    .wheels{
+        .wheel{
+            margin-bottom: 30px;
+            width: 46%;
+            &:hover{    
+                .heart{
+                    opacity: 0;
+                    visibility: hidden;
+                }     
+            }
+            .green{
+                right: 15%;
+            }
+           .images{
+            .image-hidden{
+                &:hover{
+                    opacity: 0;
+                }
+            }
+           
+            img{
+                width: 80%;
+            }
+        }
+        }
+    }
+    .select{
+        padding: 7px 60px;
+    }
+}
+.section-5{
+    .section-5-div{
+        width: 97%;
+        margin: auto;
+        .text-5{
+            width: 97%;
+            margin: auto;
+        }
+        .loremous{
+                  overflow: scroll;
+        
+        .box-3{
+            width: 54%;
+            flex-shrink: 0;
+            h3{
+                font-size: 18px;
+            }
+        }
+    }
+}
+}
+.section-6{
+   width: 100%;
+    padding: 20px;
+    .products{
+        display:initial;
+        border-bottom: none;
+        h3{
+            width: 30%;
+            margin: auto;
+            padding: 20px 0px;
+        }
+        ul{
+            overflow:scroll;
+            width: 100%;
+           display: flex;
+            li{
+                flex-shrink: 0;
+                // flex-grow: 1;
+                display: flex;
+                .all{
+                    margin-bottom: 0px;
+                    border:1px solid rgb(147, 145, 145);
+                }
+                .all::before{
+                    display: none;
+                }
+                a{
+                    padding: 8px 20px;
+                    border:1px solid rgb(216, 216, 216);
+                    border-radius: 3px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    .wheels{
+        .wheel{
+            margin-bottom: 30px;
+            width: 46%;
+            &:hover{    
+                .heart{
+                    opacity: 0;
+                    visibility: hidden;
+                }     
+            }
+            .green{
+                right: 15%;
+            }
+           .images{
+            .image-hidden{
+                &:hover{
+                    opacity: 0;
+                }
+            }
+            img{
+                width: 85%;
+            }
+        }
+        }
+    }
+    .select{
+        padding: 7px 60px;
+    }
+}
+
+.section-7{
+    background-image:  url(https://cdn.shopify.com/s/files/1/0272/1962/4029/files/banner-overlay-text2.jpg?v=1573121281);
+    padding: 120px;
+    height: 100px;
+    background-position: center;
+    // position: relative;
+    background-size:120rem;
+    position: relative;
+
+    .custom-wheels{
+        .new-7{
+            font-size: 20px;
+            position: absolute;
+            top: 5%;
+            left: 48%;
+        }
+        .custom-7{
+            font-size: 20px;
+            position: absolute;
+            top: 17%;
+            left: 40%;
+        }
+    }
+    .tires{
+        width: 95%;
+        margin: auto;
+        position: absolute;
+        top: 75%;
+        left: 15px;
+h2{
+    font-size: 30px;
+    color: rgb(50, 50, 50);
+}
+.ardicil{
+    a{
+        color: black;
+        border-right: 1.2px solid black;
+        font-size: 14px;
+
+    }
+    .shop-all{
+        padding: 0px;
+    }
+}
+p{
+    color: rgb(67, 67, 67);
+}
+a{
+    color: black;
+}
+.watch{
+    color: rgb(65, 65, 65);
+    border: 1px solid rgb(113, 113, 113);
+&:hover{
+    color: white;
+    background-color:  rgb(65, 65, 65);
+    ;
+}
+}
+    }
+}
+
+
+.section-8{
+    padding-top: 380px;
+    width: 95%;
+    margin: auto;
+    .text{
+        border-bottom: none;
+        ul{
+            li{
+                a{
+                    border: 1px solid rgb(210, 207, 207);
+                    font-size: 16px;
+                    padding: 8px 18px;
+                    border-radius: 2px;
+                }
+                .all{
+                    border: 1px solid black;
+
+                }
+                .all::before{
+                    display: none;
+                }
+            }
+        }
+    }
+    .wheels{
+        .wheel{
+            margin-bottom: 30px;
+            width: 46%;
+            &:hover{    
+                .heart{
+                    opacity: 0;
+                    visibility: hidden;
+                }     
+            }
+            .green{
+                right: 15%;
+            }
+           .images{
+            img{
+                width: 85%;
+            }
+            .image-hidden{
+                &:hover{
+                    opacity: 0;
+                }
+            }
+        }
+        .select{
+            padding: 7px 60px;
+        }
+        }
+    }
+}
+.section-9{
+    .section-9-div{
+        width: 100%; 
+.little-box{
+    margin:  20px 8px ;
+    &:hover{
+        img{
+            scale: 1;
+        }
+    }
+    .little-text{
+        padding-left: 15px;
+        .power{
+            h1{
+                font-size: 20px;
+            }
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+    a{
+        top: 60%;
+        padding:6px 11px;
+        font-size: 14px;
+    }
+    .shop1{
+        top: 75%;
+    }
+}
+.browse{
+    a{
+        padding: 8px 15px;
+    }
+}
+    }
+}
+.section-10{
+    width: 100%;
+    .posts{
+
+    a{
+        float: none;
+        padding-top: 10px;
+    }
+    }
+    .car{
+        overflow:scroll;
+           display: flex;
+            .cars{
+                width: 55%;
+                flex-shrink: 0;
+                .long{
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .image{
+                    &:hover{
+                        img{
+                            scale: 1;
+                        }
+                        .overlay:hover{
+                            opacity: 0;
+                        }
+                    }
+                }
+    }
+}
+
+}
+
+}
+
+

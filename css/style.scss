@@ -1,8 +1,6 @@
- 
-
 
 .section-1{
-    padding: 170px 0px 35px 0px;
+    padding: 180px 0px 60px 0px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) , url(https://cdn.shopify.com/s/files/1/0272/1962/4029/files/slider-4.jpg?v=1573121084);
     background-size: cover;
     background-position: center;
@@ -53,12 +51,12 @@ font-family: 'Rajdhani', sans-serif;
             border-radius: 4px;
             display: block;
             background-color: rgb(169, 0, 0);
-            margin: 0px 15px;
+            margin: 0px 12px;
             transition: 0.2s ease-in-out;
+            margin-bottom: 16px;
             &:hover{
                 background-color: rgb(126, 1, 1);
             }
-
         }
         .redicon{
             font-size: 22px;
@@ -67,53 +65,68 @@ font-family: 'Rajdhani', sans-serif;
             color: white;
             background-color:rgb(169, 0, 0); 
             transition: 0.2s ease-in-out;
+            margin-bottom: 16px;
             &:hover{
                 background-color: rgb(126, 1, 1);
             }
         }
         .mainul1{    
+            position: relative;
             padding: 35px 0px;
             .main-li{  
-                position: relative;
+                width: 220px;
                 padding: 10px 15px;
                 background-color: white;
                 margin-right: 15px;
                 border-radius: 3px;
-                
-                &:hover{
-                    .drop-ul{
-                        opacity: 1;
-                        visibility: visible;
-
-                    }
-                }
+                display: flex;
+                align-items: center;
+            .my-a{
                 a{
                   text-decoration: none;   
                   color: rgb(39, 38, 38);
                   font-size: 12px;
                   margin-right: 100px;
                 } 
-
+            }
+        }
+        .drop-ul-3{
+            @extend .drop-ul;
+            left: 66.67%;
+        }
+        .drop-ul-2{
+            @extend .drop-ul;
+            left: 33.35%;     
+       
+        }
+        .drop-ul-1{
+            @extend .drop-ul;
+            left: 0;
+        } 
             .drop-ul{
                 border: 0.01px solid rgb(171, 171, 171);
-                opacity: 0;
-                visibility: hidden;
                 background-color: white;
-                left: 0;
-                top: 41px;
-                width: 100%;
+                top: 68%;
+                width: 220px;
                 overflow: scroll;
                 position: absolute;
                 padding-left: 14px;
-                transition: 0.2s ease-in-out;
+                &.active{
+                    display: block;
+                }
+                display: none;
                  .drop-li{
                      padding: 3px 0px;
                  a{
+                     text-decoration: none;
                      font-size: 11px;
+                     color: black;
+                     display: block;
+                     padding: 6px 0px;
                  }
                 }
             }
-        }
+            
     }
 }
 .circles{
@@ -123,13 +136,16 @@ font-family: 'Rajdhani', sans-serif;
         padding: 0px 3px;
         color: rgb(210, 209, 209);
     }
+  }
 }
-}
-
-
 .section-2{
+    width:80%;
+    margin: auto;
     padding: 40px 0px;
-    border-bottom: 0.01px solid rgb(171, 171, 171);
+    overflow: scroll;
+
+    .brands{
+    width: 13%;
     h5{
         font-size: 17px;
         margin-right: 30px;
@@ -142,6 +158,7 @@ font-family: 'Rajdhani', sans-serif;
         color: rgb(0, 85, 153);;
         font-weight: 500;
     }
+}
     .lefticon1{
         font-size: 40px;
         color: rgb(172, 169, 169);
@@ -152,7 +169,11 @@ font-family: 'Rajdhani', sans-serif;
         color: black;
        padding-left: 15px;
     }
+    .myimages{
+        width: 87%;
+       display: flex;
     img{
+
         border: 0.01mm solid rgb(179, 178, 178);
         margin-right: 20px;
         width: 160px;
@@ -160,11 +181,13 @@ font-family: 'Rajdhani', sans-serif;
         transition: 0.2s ease-in-out;
         &:hover{
             border: 0.2mm solid black;
-
     }
 }
 }
+}
 .section-3{
+    width: 80%;
+    margin: auto;
     padding: 40px 0px;
     .popular{
         text-align: center;
@@ -183,33 +206,40 @@ font-family: 'Rajdhani', sans-serif;
      }
     }
 
-
     .boxes-1{
-      padding: 30px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 0px;
+        justify-content: space-between;
+
         .box-1{
+            width: 365px;
             position: relative;  
-            overflow: hidden;    
-            margin: 15px; 
+            overflow: hidden;  
+            height: 100%;
+            margin-bottom: 25px;
 
             &:hover{
                 .img-1{
                     transform: scale(1.12);
                 }
-            }         
+            }       
+        
             .img-1{
-                 transition: 0.3s ease-in-out;   
+                 transition: 0.4s ease-in-out;   
                  img{
                      width: 100%;
                  }  
             }
             .text-1{
-                left: 10%;
-                top: 25%;
+                left: 8%;
+                top: 27%;
                 position: absolute;
                 
                 .abefore{
                 display: inline-block;
                  position: relative;
+                
                  &:hover{
                      ::before{
                          width: 100%;
@@ -230,20 +260,22 @@ font-family: 'Rajdhani', sans-serif;
                 a{
                     color: black;
                     text-decoration: none;
-                    font-size: 22px;
+                    font-size: 20px;
                     font-family: 'Rajdhani', sans-serif;
                 }
             }
                 p{
-                    font-size: 11px;
-                    color: rgb(38, 37, 37);
+                    font-size: 12px;
+                    color: rgb(65, 65, 65);
                 }
-            }
-        }
-    }
+            }}
+        }   
 .section-4{
+    width:80% ;
+    margin: auto;
     padding: 10px 0px 70px 0px;
     .general{
+        width: 73%;
         border-bottom: 1px solid rgb(196, 194, 194);    
     .flash{
      .bolt{
@@ -257,9 +289,9 @@ font-family: 'Rajdhani', sans-serif;
         padding: 0px 8px;
     }
 }
-   
 }
 .general-2{
+    width: 24%;
     margin-left: 25px;
     border-bottom: 1px solid rgb(196, 194, 194);    
 
@@ -276,6 +308,7 @@ font-family: 'Rajdhani', sans-serif;
 .wheels{
     padding-top: 30px;
 .wheel{
+    width: 23%;
     margin: 0px 10px;
     position: relative; 
 
@@ -285,9 +318,12 @@ font-family: 'Rajdhani', sans-serif;
             visibility: visible;
         }     
     }
-   
+ 
     .images{
         position: relative; 
+        img{
+            width: 100%;
+        }
       .image-hidden {
        position: absolute;
         top: 0;
@@ -409,6 +445,10 @@ font-family: 'Rajdhani', sans-serif;
 .section-5{
     padding: 50px 0px 80px 0px;
     background-color: rgb(245, 245, 245);
+  .section-5-div{
+    width: 85%;
+    margin: auto;
+  
     .text-5{
       width: 70%;
       margin: auto;
@@ -423,10 +463,14 @@ font-family: 'Rajdhani', sans-serif;
        padding: 10px 0px;
        font-size: 12px;
        color: rgb(99, 98, 98);
+       line-height: 20px;
    }
  }
+ .loremous{
+     display: flex;
 .box-3{
-    width: 93%;
+    width: 33.3%;
+    margin: 0px 15px;
   h3{
     font-size: 20px;
     color: rgb(50, 49, 49);
@@ -445,7 +489,6 @@ font-family: 'Rajdhani', sans-serif;
         }
     }
   }
-  
   img{
       border-radius: 3px;
       width: 100%;
@@ -486,17 +529,27 @@ font-family: 'Rajdhani', sans-serif;
 } 
 }
 }
+ }
+}
 }
 .section-6{
-    padding: 50px;
+    width: 80%;
+    margin: auto;
+    padding: 50px 0px;
     .products{
+        display: flex;
+        flex-wrap: wrap;
         border-bottom: 0.01px solid rgb(170, 170, 170);
     h3{
+        width: 33%;
         font-family: 'Rajdhani', sans-serif;
         font-size: 23px;
         color: rgb(63, 63, 63);
     }
     ul{
+        width: 66%;
+        display: flex;
+
         li{
             .all{
                margin-bottom: 10px;
@@ -524,7 +577,7 @@ font-family: 'Rajdhani', sans-serif;
 .wheels{
   padding: 30px 0px;
 .wheel{
-    margin: 0px 12px;
+    width: 23%;
     position: relative; 
 
     &:hover{    
@@ -534,7 +587,7 @@ font-family: 'Rajdhani', sans-serif;
         }     
     }
    
-    .images{
+    .images{ 
         position: relative; 
         img{
             width: 100%;
@@ -770,6 +823,7 @@ font-family: 'Rajdhani', sans-serif;
            }
     }
     .tires{
+        width: 33.33%;
         padding-top: 90px;
         h2{
             color: white;
@@ -834,10 +888,12 @@ font-family: 'Rajdhani', sans-serif;
     }
 }
 .section-8{
+    width: 85%;
+    margin: auto;
     padding: 50px 0px;
     .text{
        border-bottom: 1px solid rgb(202, 199, 199);
-    
+
     ul{
         li{
             .all{
@@ -864,10 +920,12 @@ font-family: 'Rajdhani', sans-serif;
         }
     }
 }
+
 .wheels{
 padding: 25px 0px;
 .wheel{
-    margin: 0px 5px;
+    width: 23%;
+    margin: 0px 10px;
     position: relative; 
     &:hover{    
         .heart{
@@ -875,9 +933,11 @@ padding: 25px 0px;
             visibility: visible;
         }     
     }
-   
     .images{
         position: relative; 
+        img{
+            width: 100%;
+        }
       .image-hidden {
        position: absolute;
         top: 0;
@@ -997,6 +1057,10 @@ padding: 25px 0px;
 .section-9{
     background-color: rgb(245, 245, 245);
     padding: 50px 0px;
+    .section-9-div{
+        width: 82%;
+        margin: auto;
+    
     .text{
         text-align: center;
         h2{
@@ -1018,6 +1082,7 @@ padding: 25px 0px;
         .image{
             position: relative;
             img{   
+                width: 100%;
                 transition: 0.4s ease-in-out;
             } 
          }
@@ -1108,7 +1173,10 @@ padding: 25px 0px;
     }
 }
 }
+}
 .section-10{
+    width: 82%;
+    margin: auto;
     padding: 50px 0px;
     .posts{
         padding-bottom: 40px;
@@ -1128,7 +1196,10 @@ padding: 25px 0px;
          font-family: 'Rajdhani', sans-serif;
      }
     }
+    .car{
+display: flex;
     .cars{
+        width:33%;
         margin:0px 15px;
         .image{
             position: relative;
@@ -1174,6 +1245,7 @@ padding: 25px 0px;
             font-size: 12px;
             color: #7e7e7e;
             line-height: 22px;
+        
         }
 
         .underline {
@@ -1202,7 +1274,8 @@ padding: 25px 0px;
             height: 1.5px;
             bottom: 0;
         } 
-           
+}
+}
+}
 
-}
-}
+@import '_responsive'  ;
